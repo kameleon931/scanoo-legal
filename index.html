@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité – Scanoo</title>
+  <style>
+    :root {
+      --accent: #2563eb;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    header p  { font-size: 0.95rem; opacity: 0.85; }
+
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .lang-toggle button {
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #fff;
+      padding: 6px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: background 0.2s;
+    }
+
+    .lang-toggle button.active,
+    .lang-toggle button:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2 .icon {
+      width: 28px; height: 28px;
+      background: #eff6ff;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+    }
+
+    .card p  { margin-bottom: 10px; font-size: 0.95rem; }
+    .card ul { margin: 8px 0 10px 20px; }
+    .card ul li { margin-bottom: 6px; font-size: 0.95rem; }
+
+    .badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: var(--accent);
+      border: 1px solid #bfdbfe;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      padding: 2px 10px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .highlight {
+      background: #f0fdf4;
+      border-left: 4px solid #22c55e;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      font-size: 0.93rem;
+      margin: 12px 0;
+    }
+
+    .contact-box {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 32px;
+      text-align: center;
+    }
+
+    .contact-box h2 { color: #fff; font-size: 1.15rem; margin-bottom: 8px; }
+    .contact-box a  { color: #bfdbfe; font-weight: 600; text-decoration: none; }
+    .contact-box a:hover { color: #fff; text-decoration: underline; }
+    .contact-box p { font-size: 0.92rem; opacity: 0.9; }
+
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+      padding: 20px;
+    }
+
+    /* Language sections */
+    .lang-fr, .lang-en { display: none; }
+    .lang-fr.visible, .lang-en.visible { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Scanoo</h1>
+  <p id="header-sub">Politique de confidentialité</p>
+  <div class="lang-toggle">
+    <button class="active" onclick="setLang('fr')">Français</button>
+    <button onclick="setLang('en')">English</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== FRENCH ===== -->
+  <div class="lang-fr visible" id="content-fr">
+
+    <span class="badge">Dernière mise à jour : 14 septembre 2026</span>
+
+    <div class="card">
+      <h2><span class="icon">👋</span>Introduction</h2>
+      <p>
+        Scanoo (« nous », « notre ») exploite l'application mobile Scanoo. Cette politique de confidentialité
+        explique comment nous collectons, utilisons, stockons et protégeons vos informations personnelles
+        lorsque vous utilisez notre application.
+      </p>
+      <p>En utilisant Scanoo, vous acceptez les pratiques décrites dans ce document.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">📋</span>1. Données que nous collectons</h2>
+      <p><strong>1.1 Informations de compte</strong></p>
+      <ul>
+        <li>Adresse email</li>
+        <li>Nom complet</li>
+        <li>Mot de passe (stocké de manière chiffrée, jamais en clair)</li>
+      </ul>
+      <p><strong>1.2 Données de reçus et d'achats</strong></p>
+      <ul>
+        <li>Photos de reçus que vous scannez</li>
+        <li>Articles, prix et dates extraits automatiquement de ces reçus</li>
+        <li>Magasin et emplacement associés à l'achat</li>
+      </ul>
+      <p><strong>1.3 Données d'utilisation</strong></p>
+      <ul>
+        <li>Historique des réclamations soumises</li>
+        <li>Préférences de magasins et d'emplacements favoris</li>
+        <li>Données techniques (type d'appareil, version de l'application, langue)</li>
+      </ul>
+      <p><strong>1.4 Notifications</strong></p>
+      <ul>
+        <li>Jeton d'appareil pour l'envoi de notifications push (si vous les activez)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🎯</span>2. Pourquoi nous collectons ces données</h2>
+      <ul>
+        <li>Créer et gérer votre compte utilisateur</li>
+        <li>Analyser vos reçus pour détecter les baisses de prix</li>
+        <li>Identifier et vous notifier des opportunités de remboursement</li>
+        <li>Gérer vos réclamations et leur suivi</li>
+        <li>Vous envoyer des notifications push (baisses de prix, confirmations)</li>
+        <li>Améliorer la qualité et la précision du service</li>
+        <li>Assurer la sécurité et prévenir la fraude</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🔐</span>3. Sécurité et stockage des données</h2>
+      <p>Vos données sont hébergées et sécurisées via <strong>Firebase (Google Cloud)</strong>, une infrastructure
+        conforme aux normes industrielles de sécurité. Cela inclut :</p>
+      <ul>
+        <li>Chiffrement des données en transit (HTTPS/TLS)</li>
+        <li>Chiffrement des données au repos</li>
+        <li>Authentification sécurisée via Firebase Authentication</li>
+      </ul>
+      <div class="highlight">
+        Nous ne vendons jamais vos données personnelles à des tiers.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🤝</span>4. Partage des données</h2>
+      <p>Nous ne partageons vos données personnelles qu'avec :</p>
+      <ul>
+        <li><strong>Firebase / Google Cloud</strong> – infrastructure d'hébergement et d'authentification</li>
+        <li><strong>Services de notification push</strong> – pour l'envoi de notifications sur votre appareil</li>
+      </ul>
+      <p>Ces partenaires agissent uniquement comme sous-traitants techniques et ne peuvent pas utiliser
+        vos données à leurs propres fins.</p>
+      <p>Nous pouvons divulguer vos données si la loi l'exige (ordonnance judiciaire, obligation légale).</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">📷</span>5. Permissions demandées</h2>
+      <ul>
+        <li><strong>Caméra / Photos</strong> – pour scanner vos reçus. Les photos sont traitées pour en extraire
+          les informations d'achat, puis stockées dans votre compte.</li>
+        <li><strong>Notifications push</strong> – pour vous alerter des baisses de prix. Vous pouvez désactiver
+          cette permission à tout moment dans les réglages de votre appareil.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">⏱️</span>6. Durée de conservation</h2>
+      <p>Vos données sont conservées tant que votre compte est actif. Si vous supprimez votre compte :</p>
+      <ul>
+        <li>Vos données personnelles sont supprimées dans un délai de <strong>30 jours</strong></li>
+        <li>Les reçus et données d'achat associés à votre compte sont également supprimés</li>
+      </ul>
+      <p>Certaines données anonymisées ou agrégées peuvent être conservées à des fins statistiques.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🧑‍⚖️</span>7. Vos droits (Loi 25 – Québec / LPRPDE)</h2>
+      <p>Conformément à la législation canadienne et québécoise sur la protection des données, vous disposez des droits suivants :</p>
+      <ul>
+        <li><strong>Accès</strong> – obtenir une copie des données que nous détenons sur vous</li>
+        <li><strong>Rectification</strong> – corriger des données inexactes</li>
+        <li><strong>Suppression</strong> – demander la suppression de votre compte et de vos données</li>
+        <li><strong>Portabilité</strong> – recevoir vos données dans un format structuré</li>
+        <li><strong>Opposition</strong> – vous opposer à certains traitements</li>
+      </ul>
+      <p>Pour exercer ces droits, contactez-nous à <a href="mailto:support@scanno.ca">support@scanno.ca</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">👶</span>8. Protection des mineurs</h2>
+      <p>Scanoo est destiné aux personnes de <strong>18 ans et plus</strong>. Nous ne collectons pas sciemment
+        de données personnelles d'enfants de moins de 18 ans. Si vous pensez qu'un mineur a créé un compte,
+        contactez-nous immédiatement.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🔄</span>9. Modifications de cette politique</h2>
+      <p>Nous pouvons mettre à jour cette politique de temps à autre. En cas de modifications importantes,
+        nous vous en informerons via l'application ou par email. La date de dernière mise à jour est indiquée
+        en haut de ce document.</p>
+    </div>
+
+    <div class="contact-box">
+      <h2>📬 Nous contacter</h2>
+      <p>Pour toute question relative à cette politique de confidentialité ou à vos données :</p>
+      <br/>
+      <p><strong>Équipe Scanoo</strong></p>
+      <p><a href="mailto:support@scanno.ca">support@scanno.ca</a></p>
+      <br/>
+      <p style="font-size:0.82rem; opacity:0.75;">Scanoo est régi par les lois du Canada. Tout litige relève de la juridiction des tribunaux du Québec.</p>
+    </div>
+
+  </div><!-- /lang-fr -->
+
+
+  <!-- ===== ENGLISH ===== -->
+  <div class="lang-en" id="content-en">
+
+    <span class="badge">Last updated: September 14, 2026</span>
+
+    <div class="card">
+      <h2><span class="icon">👋</span>Introduction</h2>
+      <p>
+        Scanoo ("we", "our") operates the Scanoo mobile application. This Privacy Policy explains how we
+        collect, use, store, and protect your personal information when you use our app.
+      </p>
+      <p>By using Scanoo, you agree to the practices described in this document.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">📋</span>1. Data We Collect</h2>
+      <p><strong>1.1 Account Information</strong></p>
+      <ul>
+        <li>Email address</li>
+        <li>Full name</li>
+        <li>Password (stored encrypted, never in plain text)</li>
+      </ul>
+      <p><strong>1.2 Receipt and Purchase Data</strong></p>
+      <ul>
+        <li>Photos of receipts you scan</li>
+        <li>Items, prices, and dates automatically extracted from those receipts</li>
+        <li>Store and location associated with the purchase</li>
+      </ul>
+      <p><strong>1.3 Usage Data</strong></p>
+      <ul>
+        <li>History of claims submitted</li>
+        <li>Favourite store and location preferences</li>
+        <li>Technical data (device type, app version, language)</li>
+      </ul>
+      <p><strong>1.4 Notifications</strong></p>
+      <ul>
+        <li>Device token for sending push notifications (if you enable them)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🎯</span>2. Why We Collect This Data</h2>
+      <ul>
+        <li>Create and manage your user account</li>
+        <li>Analyse your receipts to detect price drops</li>
+        <li>Identify and notify you of refund opportunities</li>
+        <li>Manage your claims and their status</li>
+        <li>Send you push notifications (price drops, confirmations)</li>
+        <li>Improve the quality and accuracy of the service</li>
+        <li>Ensure security and prevent fraud</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🔐</span>3. Security and Data Storage</h2>
+      <p>Your data is hosted and secured via <strong>Firebase (Google Cloud)</strong>, an infrastructure
+        compliant with industry security standards. This includes:</p>
+      <ul>
+        <li>Data encryption in transit (HTTPS/TLS)</li>
+        <li>Data encryption at rest</li>
+        <li>Secure authentication via Firebase Authentication</li>
+      </ul>
+      <div class="highlight">
+        We never sell your personal data to third parties.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🤝</span>4. Data Sharing</h2>
+      <p>We only share your personal data with:</p>
+      <ul>
+        <li><strong>Firebase / Google Cloud</strong> – hosting and authentication infrastructure</li>
+        <li><strong>Push notification services</strong> – to deliver notifications to your device</li>
+      </ul>
+      <p>These partners act solely as technical processors and cannot use your data for their own purposes.</p>
+      <p>We may disclose your data if required by law (court order, legal obligation).</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">📷</span>5. Permissions Requested</h2>
+      <ul>
+        <li><strong>Camera / Photos</strong> – to scan your receipts. Photos are processed to extract
+          purchase information and stored in your account.</li>
+        <li><strong>Push notifications</strong> – to alert you to price drops. You can disable this
+          permission at any time in your device settings.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">⏱️</span>6. Data Retention</h2>
+      <p>Your data is retained as long as your account is active. If you delete your account:</p>
+      <ul>
+        <li>Your personal data is deleted within <strong>30 days</strong></li>
+        <li>Receipts and purchase data associated with your account are also deleted</li>
+      </ul>
+      <p>Some anonymised or aggregated data may be retained for statistical purposes.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🧑‍⚖️</span>7. Your Rights (PIPEDA / Québec Law 25)</h2>
+      <p>Under Canadian and Québec data protection legislation, you have the following rights:</p>
+      <ul>
+        <li><strong>Access</strong> – obtain a copy of the data we hold about you</li>
+        <li><strong>Rectification</strong> – correct inaccurate data</li>
+        <li><strong>Deletion</strong> – request deletion of your account and data</li>
+        <li><strong>Portability</strong> – receive your data in a structured format</li>
+        <li><strong>Objection</strong> – object to certain processing activities</li>
+      </ul>
+      <p>To exercise these rights, contact us at <a href="mailto:support@scanno.ca">support@scanno.ca</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">👶</span>8. Protection of Minors</h2>
+      <p>Scanoo is intended for users <strong>18 years of age and older</strong>. We do not knowingly
+        collect personal data from children under 18. If you believe a minor has created an account,
+        please contact us immediately.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🔄</span>9. Changes to This Policy</h2>
+      <p>We may update this policy from time to time. For significant changes, we will notify you via
+        the app or by email. The date of the last update is indicated at the top of this document.</p>
+    </div>
+
+    <div class="contact-box">
+      <h2>📬 Contact Us</h2>
+      <p>For any questions about this Privacy Policy or your data:</p>
+      <br/>
+      <p><strong>Scanoo Team</strong></p>
+      <p><a href="mailto:support@scanno.ca">support@scanno.ca</a></p>
+      <br/>
+      <p style="font-size:0.82rem; opacity:0.75;">Scanoo is governed by the laws of Canada. Any disputes are subject to the jurisdiction of the courts of Québec.</p>
+    </div>
+
+  </div><!-- /lang-en -->
+
+</main>
+
+<footer>
+  &copy; 2026 Scanoo. Tous droits réservés / All rights reserved.
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('content-fr').classList.toggle('visible', lang === 'fr');
+    document.getElementById('content-en').classList.toggle('visible', lang === 'en');
+    document.getElementById('header-sub').textContent =
+      lang === 'fr' ? 'Politique de confidentialité' : 'Privacy Policy';
+    document.querySelectorAll('.lang-toggle button').forEach((btn, i) => {
+      btn.classList.toggle('active', (i === 0 && lang === 'fr') || (i === 1 && lang === 'en'));
+    });
+  }
+</script>
+
+</body>
+</html>
